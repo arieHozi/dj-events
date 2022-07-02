@@ -28,6 +28,7 @@ export default function EventPage({ evt }) {
           {new Date(evt.date).toLocaleDateString('en-US')} at {evt.time}
         </span>
         <h1>{evt.name}</h1>
+        {'hello worls'}
         {evt.image && (<div>
           <div className={styles.image}>
             <Image src={evt.image.formats.medium.url} width={960} height={600} alt="#" />
